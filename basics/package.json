@@ -1,6 +1,6 @@
 {
   "name": "@jvalue/node-dry-basics",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Reusable libraries for our node projects (NOT containing any dependencies)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
