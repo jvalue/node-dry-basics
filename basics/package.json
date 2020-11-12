@@ -1,0 +1,25 @@
+{
+  "name": "node-dry-basics",
+  "version": "1.0.0",
+  "description": "Reusable libraries for our node projects (NOT containing any dependencies)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvalue/node-dry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/jvalue/node-dry/issues"
+  },
+  "homepage": "https://github.com/jvalue/node-dry#readme"
+}
