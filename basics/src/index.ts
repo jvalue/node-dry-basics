@@ -1,5 +1,5 @@
-import { sleep } from "./sleep"
+import { sleep } from './sleep'
 
 export {
-    sleep
+  sleep
 }
