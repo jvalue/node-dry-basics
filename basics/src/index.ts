@@ -1,3 +1,5 @@
-export const sleep = (ms: number): Promise<void> => {
-    return new Promise<void>(resolve => setTimeout(resolve, ms))
+import { sleep } from "./sleep"
+
+export {
+    sleep
 }
