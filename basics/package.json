@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/jvalue/node-dry/issues"
   },
-  "homepage": "https://github.com/jvalue/node-dry#readme"
+  "homepage": "https://github.com/jvalue/node-dry#readme",
+  "dependencies": {
+    "@types/node": "^14.14.7"
+  }
 }

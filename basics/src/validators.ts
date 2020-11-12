@@ -6,6 +6,10 @@ export function isString (x: unknown): x is string {
   return typeof x === 'string'
 }
 
+export function isEmpty (value: string | undefined): value is undefined {
+  return value === undefined || value === ''
+}
+
 export function isObject (x: unknown): x is object {
   return typeof x === 'object'
 }
