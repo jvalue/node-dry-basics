@@ -1,5 +1,10 @@
 import { isEmpty } from './validators'
 
+/**
+ * Reads an environment variable, and logs it.
+ * If the environment variable cannot be found, the process is exited (die).
+ * @param envName the name of the environment variable to be read
+ */
 export function readEnvOrDie (envName: string): string {
   const env = process.env[envName]
   if (isEmpty(env)) {
