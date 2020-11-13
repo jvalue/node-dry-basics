@@ -15,7 +15,7 @@ jobs:
         run: cp README.md ${{ env.workdir }}/ && cp LICENSE ${{ env.workdir }}/
       - run: npm install
         working-directory: ${{ env.workdir }} 
-      - run: npm run lint
+      - run: npm run lint-ci
         working-directory: ${{ env.workdir }}
       - run: npm run build
         working-directory: ${{ env.workdir }}
