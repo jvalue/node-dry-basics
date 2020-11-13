@@ -1,9 +1,12 @@
 {
   "name": "@jvalue/node-dry-basics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reusable libraries for our node projects (NOT containing any dependencies)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --fix",
