@@ -6,22 +6,16 @@ The main repository can be found here: [JValue Open Data Service](https://github
 
 
 ## How to use
-* add a `.npmrc` file with the following content to access our package registry
-```
-@jvalue:registry=https://npm.pkg.github.com
-```
-* add the packages to your `package.json` as usual
+
+Add the packages to your `package.json` as usual or use `npm install --save <package-name>`
+
 
 ## Packages
 
 | **Name** | **Package Name** | **Current Version** | **Description** |
 |---|---|---|---|
-| Basics | `@jvalue/node-dry-basics` | `0.0.1` | *all basic functionality that need no dependencies* |
+| Basics | `@jvalue/node-dry-basics` | `0.0.2` | *all basic functionality that need no dependencies* |
 
-
-## Contact us
-
-If you have any questions or would like to contact us, you can easily reach us via gitter channel. Issues can be reported via GitHub.
 
 ## License
 
