@@ -3,7 +3,7 @@ name: Build and publish basics lib
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  pg-build:
+  basics-build:
     runs-on: ubuntu-latest
     env:
       workdir: basics
@@ -15,10 +15,10 @@ jobs:
         working-directory: ${{ env.workdir }} 
       - run: npm run build
         working-directory: ${{ env.workdir }}
-  pg-publish:
+  basics-publish:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
-    needs: [pg-build]
+    needs: [basics-build]
 
     env:
       workdir: basics
