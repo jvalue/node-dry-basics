@@ -1,13 +1,14 @@
 #! /bin/bash
 cd "$1" || exit
 
+# read parameters via npm
 PACKAGE_NAME=$(npm run get:name -s) || exit
 echo "Package name: $PACKAGE_NAME"
-# CURRENT_PACKAGE_VERSION=$(npm run get:version -s) || exit
-CURRENT_PACKAGE_VERSION=1.1.0
+
+CURRENT_PACKAGE_VERSION=$(npm run get:version -s) || exit
 echo "Local version: $CURRENT_PACKAGE_VERSION"
-# PUBLISHED_PACKAGE_VERSION=$(npm show "$PACKAGE_NAME") || PUBLISHED_PACKAGE_VERSION="0.0.0"
-PUBLISHED_PACKAGE_VERSION=0.1.1
+
+PUBLISHED_PACKAGE_VERSION=$(npm show "$PACKAGE_NAME") || PUBLISHED_PACKAGE_VERSION="0.0.0"
 echo "Latest published version: $PUBLISHED_PACKAGE_VERSION"
 
 
