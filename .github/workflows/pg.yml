@@ -1,4 +1,4 @@
-name: Publish Basics
+name: Build and publish pg lib
 
 on: [push, pull_request, workflow_dispatch]
 
