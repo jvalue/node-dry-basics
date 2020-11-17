@@ -11,7 +11,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --fix",
     "lint-ci": "eslint src --max-warnings=0",
-    "build": "tsc"
+    "build": "tsc",
+    "get:name": "echo $npm_package_name",
+    "get:version": "echo $npm_package_version"
   },
   "dependencies": {
     "@jvalue/node-dry-basics": "0.0.3",
