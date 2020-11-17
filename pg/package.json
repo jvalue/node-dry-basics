@@ -1,7 +1,7 @@
 {
   "name": "@jvalue/node-dry-pg",
   "version": "0.0.2",
-  "description": "Reusable pg helpers for our node projects (NOT containing any dependencies)",
+  "description": "Reusable pg helpers for our node projects (only containing pg and @jvalue/node-dry-basics)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
