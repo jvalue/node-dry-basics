@@ -14,8 +14,8 @@ Add the packages to your `package.json` as usual or use `npm install --save <pac
 
 | **Name** | **Package Name** | **Current Version** | **Description** |
 |---|---|---|---|
-| Basics | `@jvalue/node-dry-basics` | `0.0.3` | *all basic functionality that need no dependencies* |
-| Postgres | `@jvalue/node-dry-pg` | `0.0.1` | *postgres helpers and the pg package* |
+| Basics | `@jvalue/node-dry-basics` | [view on NPMjs](https://www.npmjs.com/package/@jvalue/node-dry-basics) | *all basic functionality that need no dependencies* |
+| Postgres | `@jvalue/node-dry-pg` | [view on NPMjs](https://www.npmjs.com/package/@jvalue/node-dry-pg) | *postgres helpers and the pg package* |
 
 
 ## License
