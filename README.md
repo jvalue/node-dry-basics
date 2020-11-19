@@ -1,6 +1,7 @@
 # Node DRY
 
-Reusable libraries for our node microservices. These packages do NOT contain any business knowledge, but pure reusable functionality that would repeat over all services.
+Reusable library for our node microservices introducing no further dependencies! 
+These package does NOT contain any business knowledge, but pure reusable functionality that would repeat over all services.
 
 The main repository can be found here: [JValue Open Data Service](https://github.com/jvalue/open-data-service)
 
@@ -8,13 +9,6 @@ The main repository can be found here: [JValue Open Data Service](https://github
 ## How to use
 
 Add the packages to your `package.json` as usual or use `npm install --save <package-name>`
-
-
-## Packages
-
-| **Name** | **Package Name** | **Current Version** | **Description** |
-|---|---|---|---|
-| Basics | `@jvalue/node-dry-basics` | `0.0.2` | *all basic functionality that need no dependencies* |
 
 
 ## License

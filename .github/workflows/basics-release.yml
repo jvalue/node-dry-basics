@@ -1,24 +1,18 @@
 name: Publish Basics
 
-on:
+on: 
   release:
-    types: [published]
+    types: [ created ]
+
 
 jobs:
-  build-and-publish:
+  publish:
     runs-on: ubuntu-latest
-    env:
-      workdir: basics
     steps:
       - uses: actions/checkout@v2
-      - name: Setup README and LICENSE files
-        run: cp README.md ${{ env.workdir }}/ && cp LICENSE ${{ env.workdir }}/
       - run: npm install
-        working-directory: ${{ env.workdir }} 
       - run: npm run lint-ci
-        working-directory: ${{ env.workdir }}
       - run: npm run build
-        working-directory: ${{ env.workdir }}
       # Note: Currently only publishing to NPM since GitHub does not allow unauthenticated access to public packages!
       - name: Setup node for NPMjs Packages
         uses: actions/setup-node@v1
@@ -27,6 +21,5 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Publish to NPMjs Packages
         run: npm publish --access public
-        working-directory: ${{ env.workdir }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
